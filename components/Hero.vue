@@ -13,9 +13,8 @@ defineProps({
   </video>
 </template>
 
-<style>
+<style scoped>
 video {
-  position: absolute;
   object-fit: cover;
   height: 100vh;
   min-width: 100%;
