@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "Orta.vscode-jest",
+    "christian-kohler.path-intellisense",
+    "Nuxtr.nuxtr-vscode"
+  ]
+}
