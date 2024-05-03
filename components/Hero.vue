@@ -8,16 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <video autoplay muted loop playsinline>
+  <video autoplay muted loop playsinline class="w-full h-screen object-cover">
     <source :src="videoSource" type="video/mp4" />
   </video>
 </template>
-
-<style scoped>
-video {
-  object-fit: cover;
-  height: 100vh;
-  min-width: 100%;
-  background: hsl(0, 0%, 0%);
-}
-</style>

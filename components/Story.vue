@@ -1,11 +1,13 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
-    <div class="content">
-      <p class="title">Mihai Cluj's Studio</p>
-      <p class="subtitle">Content Creators Paradise</p>
-      <p class="body">
+  <div class="w-full bg-secondary">
+    <div class="mx-auto min-w-64 max-w-[60%] justify-center py-12">
+      <p class="text-4xl font-bold text-primary">Mihai Clujs Studio</p>
+      <p class="text-platinum mb-5 text-2xl font-semibold">
+        Content Creators Paradise
+      </p>
+      <p class="text-white">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
         tempora incidunt labore earum! Debitis nihil ad cumque architecto
         placeat illo eius explicabo pariatur, vero autem iure facere nemo
@@ -15,37 +17,4 @@
   </div>
 </template>
 
-<style scoped>
-div {
-  width: 100%;
-  /* height: 250px; */
-  background-color: var(--color-primary-dark);
-}
-
-.content {
-  padding: 48px 0;
-  margin-inline: auto;
-  max-width: 60%;
-  min-width: 250px;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--color-primary-light);
-  text-align: center;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-bottom: 1.25rem;
-}
-
-.body {
-  color: white;
-  text-align: center;
-}
-</style>
+<style scoped></style>
