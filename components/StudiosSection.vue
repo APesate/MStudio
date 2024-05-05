@@ -18,8 +18,8 @@ const studioImages = [
 </script>
 
 <template>
-  <div class="bg-orange-200">
-    <div class="mx-auto grid w-[60%] grid-cols-1 gap-4 py-4 md:grid-cols-2">
+  <div class="bg-white">
+    <div class="mx-auto grid w-[60%] grid-cols-1 gap-4 py-12 md:grid-cols-2">
       <div
         v-for="(images, index) in studioImages"
         :key="index"
