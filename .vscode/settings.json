@@ -7,8 +7,9 @@
   "editor.fontFamily": "Fira Code Retina, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.format.enable": false,
+  "editor.linkedEditing": true,
   "editor.quickSuggestions": {
     "strings": "on"
-  }
+  },
+  "eslint.format.enable": false
 }

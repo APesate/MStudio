@@ -19,7 +19,7 @@ const studioImages = getImages('a')
 </script>
 
 <template>
-  <div class="w-full bg-secondary pb-12">
+  <div class="w-full bg-secondary pb-12" id="projects">
     <div class="mx-auto mb-10 min-w-64 max-w-[60%] justify-center pt-12">
       <p class="mb-2 text-4xl font-bold text-primary">Our Projects</p>
       <p class="text-semibold text-2xl font-semibold text-platinum">

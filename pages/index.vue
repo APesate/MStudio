@@ -7,6 +7,7 @@
   <Story />
   <StudiosSection />
   <ProjectsSection />
+  <ContactFormSection />
 </template>
 
 <style></style>
