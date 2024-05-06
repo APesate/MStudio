@@ -11,5 +11,8 @@
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "eslint.format.enable": false
+  "eslint.format.enable": false,
+  "tailwindCSS.includeLanguages": {
+    "vue": "html"
+  }
 }

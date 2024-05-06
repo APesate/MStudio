@@ -1,12 +1,4 @@
 <script lang="ts" setup>
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from '@/components/ui/carousel'
-
 function getImages(prefix: string) {
   let images = []
   for (let i = 0; i < 5; i++) {
@@ -27,24 +19,24 @@ const studioImages = getImages('a')
       </p>
     </div>
 
-    <Carousel
+    <SHCarousel
       class="relative w-full"
       :opts="{
         align: 'center',
         loop: true,
       }"
     >
-      <CarouselContent class="">
-        <CarouselItem
+      <SHCarouselContent class="">
+        <SHCarouselItem
           v-for="(image, index) in studioImages"
           :key="index"
           class="flex md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
         >
           <img :src="image" class="h-[250px] w-full rounded-3xl object-cover" />
-        </CarouselItem>
-      </CarouselContent>
-      <CarouselPrevious class="absolute z-10 translate-x-16" />
-      <CarouselNext class="absolute z-10 -translate-x-16" />
+        </SHCarouselItem>
+      </SHCarouselContent>
+      <SHCarouselPrevious class="absolute z-10 translate-x-16" />
+      <SHCarouselNext class="absolute z-10 -translate-x-16" />
       <div class="embla__dots">
         <button
           class="embla__dot embla__dot--active"
@@ -52,6 +44,6 @@ const studioImages = getImages('a')
         ></button>
         <button class="embla__dot" aria-label="Next slide"></button>
       </div>
-    </Carousel>
+    </SHCarousel>
   </div>
 </template>

@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import Button from './ui/button/Button.vue'
-
 function getImages(prefix: string) {
   let images = []
   for (let i = 0; i < 5; i++) {
@@ -26,7 +24,9 @@ const studioImages = [
         class="relative"
       >
         <StudioCard :images="images" />
-        <Button class="absolute bottom-2 right-2 text-white">Book Now</Button>
+        <SHButton class="absolute bottom-2 right-2 text-white">
+          Book Now
+        </SHButton>
       </div>
       <div class="w-full">
         <p class="mb-4 text-4xl font-bold">Book Now</p>
@@ -37,7 +37,7 @@ const studioImages = [
           dignissimos nesciunt id alias.
         </p>
         <div class="float-end">
-          <Button class="text-white">Calendar</Button>
+          <SHButton class="text-white">Calendar</SHButton>
         </div>
       </div>
     </div>

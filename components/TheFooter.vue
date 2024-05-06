@@ -1,7 +1,4 @@
-<script lang="ts" setup>
-import { RouterLink } from 'vue-router'
-import Button from './ui/button/Button.vue'
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="bg-secondary py-8">

@@ -1,10 +1,5 @@
 <script setup lang="ts">
 import Autoplay from 'embla-carousel-autoplay'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel'
 
 defineProps<{
   images: string[]
@@ -18,7 +13,7 @@ const plugin = Autoplay({
 </script>
 
 <template>
-  <Carousel
+  <SHCarousel
     :opts="{
       align: 'center',
       loop: true,
@@ -27,8 +22,8 @@ const plugin = Autoplay({
     @mouseenter="plugin.stop"
     @mouseleave="[plugin.reset(), plugin.play()]"
   >
-    <CarouselContent class="ml-0">
-      <CarouselItem
+    <SHCarouselContent class="ml-0">
+      <SHCarouselItem
         v-for="(_, index) in images"
         :key="index"
         class="rounded-3xl pl-0"
@@ -37,7 +32,7 @@ const plugin = Autoplay({
           :src="images[index]"
           class="h-[250px] w-full rounded-3xl object-cover"
         />
-      </CarouselItem>
-    </CarouselContent>
-  </Carousel>
+      </SHCarouselItem>
+    </SHCarouselContent>
+  </SHCarousel>
 </template>
