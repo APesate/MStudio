@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 function getImages(prefix: string) {
   let images = []
   for (let i = 0; i < 5; i++) {
@@ -8,6 +12,10 @@ function getImages(prefix: string) {
 }
 
 const studioImages = getImages('a')
+
+const navigateToProject = (slug: string) => {
+  router.push(`/projects/${slug}`)
+}
 </script>
 
 <template>
